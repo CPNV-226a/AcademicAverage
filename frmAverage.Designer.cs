@@ -1,6 +1,6 @@
 ﻿namespace CPNV
 {
-    partial class frmAverage
+    partial class FrmAverage
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAverage));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAverage));
             this.grbStudents = new System.Windows.Forms.GroupBox();
             this.lsbStudents = new System.Windows.Forms.ListBox();
             this.cmdAddStudent = new System.Windows.Forms.Button();
@@ -182,7 +182,7 @@
             this.mnuHelp.Size = new System.Drawing.Size(44, 20);
             this.mnuHelp.Text = "Help";
             // 
-            // frmOverview
+            // frmAverage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -195,8 +195,8 @@
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "frmOverview";
-            this.Text = "Overview";
+            this.Name = "frmAverage";
+            this.Text = "Academic Average";
             this.Load += new System.EventHandler(this.frmOverview_Load);
             this.grbStudents.ResumeLayout(false);
             this.grbActions.ResumeLayout(false);

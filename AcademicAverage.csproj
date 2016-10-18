@@ -46,33 +46,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmAverage.cs">
+    <Compile Include="FrmAverage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAverage.Designer.cs">
-      <DependentUpon>frmAverage.cs</DependentUpon>
+    <Compile Include="FrmAverage.Designer.cs">
+      <DependentUpon>FrmAverage.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmGrade.cs">
+    <Compile Include="FrmGrade.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmGrade.Designer.cs">
-      <DependentUpon>frmGrade.cs</DependentUpon>
+    <Compile Include="FrmGrade.Designer.cs">
+      <DependentUpon>FrmGrade.cs</DependentUpon>
     </Compile>
     <Compile Include="ListTools.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="frmStudent.cs">
+    <Compile Include="FrmStudent.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmStudent.Designer.cs">
-      <DependentUpon>frmStudent.cs</DependentUpon>
+    <Compile Include="FrmStudent.Designer.cs">
+      <DependentUpon>FrmStudent.cs</DependentUpon>
     </Compile>
     <Compile Include="Student.cs" />
-    <EmbeddedResource Include="frmAverage.resx">
-      <DependentUpon>frmAverage.cs</DependentUpon>
+    <EmbeddedResource Include="FrmAverage.resx">
+      <DependentUpon>FrmAverage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmGrade.resx">
-      <DependentUpon>frmGrade.cs</DependentUpon>
+    <EmbeddedResource Include="FrmGrade.resx">
+      <DependentUpon>FrmGrade.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -84,8 +84,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="frmStudent.resx">
-      <DependentUpon>frmStudent.cs</DependentUpon>
+    <EmbeddedResource Include="FrmStudent.resx">
+      <DependentUpon>FrmStudent.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

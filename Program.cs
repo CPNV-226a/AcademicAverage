@@ -16,7 +16,7 @@ namespace CPNV
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmAverage());
+            Application.Run(new FrmAverage());
         }
     }
 }

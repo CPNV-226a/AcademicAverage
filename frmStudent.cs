@@ -10,19 +10,19 @@ using System.Windows.Forms;
 
 namespace CPNV
 {
-    public partial class frmStudent : Form
+    public partial class FrmStudent : Form
     {
         #region private attributes
         private Student _student = null;
         #endregion private attributes
 
         #region constructors
-        public frmStudent()
+        public FrmStudent()
         {
             InitializeComponent();
         }
 
-        public frmStudent(Student student)
+        public FrmStudent(Student student)
         {
             InitializeComponent();
             _student = student;

@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace CPNV
 {
-    public partial class frmAverage : Form
+    public partial class FrmAverage : Form
     {
         #region contructors
-        public frmAverage()
+        public FrmAverage()
         {
             InitializeComponent();
         }
@@ -70,7 +70,7 @@ namespace CPNV
         #region Common actions after events
         private void openFrmStudentInModale()
         {
-            frmStudent frmStudent = new frmStudent();
+            FrmStudent frmStudent = new FrmStudent();
             if (frmStudent.ShowDialog(this) == DialogResult.OK)
             {
 
@@ -83,7 +83,38 @@ namespace CPNV
             DialogResult dialogResultDelete = MessageBox.Show("Confirmez-vous la suppression ?", "Suppression d'un élève", MessageBoxButtons.OKCancel);
         }
         #endregion Common actions after events
-
         #endregion private methods
+
+        #region accessors and mutators for unit test
+        public bool cmdAddStudentStatus
+        {
+            get { return this.cmdAddStudent.Enabled; }
+        }
+
+        public bool mnuItemAddStudentStatus
+        {
+            get { return this.mnuItemAdd.Enabled; }
+        }
+
+        public bool cmdUpdateStudentStatus
+        {
+            get { return this.cmdUpdateStudent.Enabled; }
+        }
+
+        public bool mnuItemUpdateStudentStatus
+        {
+            get { return this.mnuItemUpdate.Enabled; }
+        }
+
+        public bool cmdRemoveStudentStatus
+        {
+            get { return this.cmdRemoveStudent.Enabled; }
+        }
+
+        public bool mnuItemRemoveStudentStatus
+        {
+            get { return this.mnuItemRemove.Enabled; }
+        }
+        #endregion accessors and mutators for unit test
     }
 }
