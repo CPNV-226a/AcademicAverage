@@ -58,7 +58,7 @@
             0,
             0,
             0});
-            this.nduGradeNumber.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            this.nduGradeNumber.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
             // 
             // numGradeDecimal
             // 

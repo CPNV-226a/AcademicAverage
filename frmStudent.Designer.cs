@@ -172,11 +172,6 @@
             // lsbGrades
             // 
             this.lsbGrades.FormattingEnabled = true;
-            this.lsbGrades.Items.AddRange(new object[] {
-            "4.5",
-            "5.5",
-            "6.0",
-            "3.0"});
             this.lsbGrades.Location = new System.Drawing.Point(99, 20);
             this.lsbGrades.Name = "lsbGrades";
             this.lsbGrades.Size = new System.Drawing.Size(52, 82);
@@ -212,7 +207,7 @@
             this.grbConfirmCancel.TabIndex = 5;
             this.grbConfirmCancel.TabStop = false;
             // 
-            // frmStudent
+            // FrmStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -224,7 +219,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "frmStudent";
+            this.Name = "FrmStudent";
             this.Text = "Student";
             this.Load += new System.EventHandler(this.frmStudent_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcbStudentFace)).EndInit();

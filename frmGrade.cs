@@ -17,7 +17,7 @@ namespace CPNV
             InitializeComponent();
         }
 
-        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        private void numericUpDown_ValueChanged(object sender, EventArgs e)
         {
 
         }
