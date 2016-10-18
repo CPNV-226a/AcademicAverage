@@ -1,6 +1,6 @@
 ﻿namespace CPNV
 {
-    partial class frmOverview
+    partial class frmAverage
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmOverview));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAverage));
             this.grbStudents = new System.Windows.Forms.GroupBox();
             this.lsbStudents = new System.Windows.Forms.ListBox();
             this.cmdAddStudent = new System.Windows.Forms.Button();

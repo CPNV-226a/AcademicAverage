@@ -12,9 +12,27 @@ namespace CPNV
 {
     public partial class frmStudent : Form
     {
+        #region private attributes
+        private Student _student = null;
+        #endregion private attributes
+
+        #region constructors
         public frmStudent()
         {
             InitializeComponent();
+        }
+
+        public frmStudent(Student student)
+        {
+            InitializeComponent();
+            _student = student;
+        }
+        #endregion constructors
+
+        #region IHM actions
+        private void frmStudent_Load(object sender, EventArgs e)
+        {
+            updateIHM();
         }
 
         private void pcbStudentFace_Click(object sender, EventArgs e)
@@ -22,12 +40,17 @@ namespace CPNV
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnConfirm_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmdConfirm_Click(object sender, EventArgs e)
         {
             DialogResult dialogResultDelete = MessageBox.Show("Confirmez-vous la suppression ?", "Suppression d'une note", MessageBoxButtons.OKCancel);
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void cmdCancel_Click(object sender, EventArgs e)
         {
             DialogResult dialogResultDelete = MessageBox.Show("Confirmez-vous l'annulation ?", "Suppression de la saisie", MessageBoxButtons.OKCancel);
         }
@@ -38,6 +61,7 @@ namespace CPNV
             
             frmManageMark.ShowDialog(this);
         }
+        #endregion IHM actions
 
         #region common private methods
         //private openFrmGrade()
@@ -45,11 +69,16 @@ namespace CPNV
 
         //}
 
-        #endregion common private methods
-
-        private void frmStudent_Load(object sender, EventArgs e)
+        private void updateIHM()
         {
-
+            Student stud = this._student;
+            if (stud != null)
+            {
+                txtFirstname.Text = stud.firstname;
+                txtName.Text = stud.name;
+            }
         }
+
+        #endregion common private methods
     }
 }

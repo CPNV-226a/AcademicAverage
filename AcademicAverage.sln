@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcademicAverage", "Academic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAcademicAverage", "..\TestListTools\TestAcademicAverage.csproj", "{75A107D9-4532-429C-A9B7-9450344250A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestUIAcademicAverage", "..\TestUIAcademicAverage\TestUIAcademicAverage.csproj", "{307132E2-158F-42F7-95E7-7656D32A2E3B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{75A107D9-4532-429C-A9B7-9450344250A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75A107D9-4532-429C-A9B7-9450344250A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75A107D9-4532-429C-A9B7-9450344250A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{307132E2-158F-42F7-95E7-7656D32A2E3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{307132E2-158F-42F7-95E7-7656D32A2E3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{307132E2-158F-42F7-95E7-7656D32A2E3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{307132E2-158F-42F7-95E7-7656D32A2E3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

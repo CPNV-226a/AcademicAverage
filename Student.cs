@@ -11,7 +11,7 @@ namespace CPNV
         #region private attributes
         private string _name = "";
         private string _firstname = "";
-        private List<Grade> _listOfGrades = null;
+        private List<float> _listOfGrades = null;
         private float _average = 0;
         #endregion private attributes
 
@@ -20,7 +20,7 @@ namespace CPNV
         {
             _name = name;
             _firstname = firstname;
-            _listOfGrades = new List<Grade>();
+            _listOfGrades = new List<float>();
         }
         #endregion constructors
 
@@ -35,34 +35,38 @@ namespace CPNV
             get { return this._firstname; }
         }
 
-        public List<Grade> listOfGrades
+        public List<float> listOfGrades
         {
             get { return this._listOfGrades; }
+        }
+
+        public float average
+        {
+            get { return this._average; }
         }
         #endregion accessors and mutators
 
         #region public methodes
-        public void addGrade(Grade grade)
+        public void addGrade(float grade)
         {
             this._listOfGrades.Add(grade);
+            updateAverage(this._listOfGrades);
         }
         #endregion public methodes
 
         #region private methodes
-        private float average(List<float> listOfGrades)
+        private void updateAverage(List<float> listOfGrades)
         {
             List<float> listOfGradesToCalculateAverage = listOfGrades;
             float averageCalculated = 0;
 
             if (listOfGradesToCalculateAverage != null)
             {
-                foreach (float garde in listOfGradesToCalculateAverage)
-                {
-
-                }
+                //we get the sum of the float list
+                ListTools lstTools = new ListTools();
+                averageCalculated = lstTools.averageList(listOfGrades);
             }
-
-            return averageCalculated;
+            this._average = averageCalculated;
         }
         #endregion private methodes
     }

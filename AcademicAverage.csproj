@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmOverview.cs">
+    <Compile Include="frmAverage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmOverview.Designer.cs">
-      <DependentUpon>frmOverview.cs</DependentUpon>
+    <Compile Include="frmAverage.Designer.cs">
+      <DependentUpon>frmAverage.cs</DependentUpon>
     </Compile>
     <Compile Include="frmGrade.cs">
       <SubType>Form</SubType>
@@ -58,7 +58,6 @@
     <Compile Include="frmGrade.Designer.cs">
       <DependentUpon>frmGrade.cs</DependentUpon>
     </Compile>
-    <Compile Include="Grade.cs" />
     <Compile Include="ListTools.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -69,8 +68,8 @@
       <DependentUpon>frmStudent.cs</DependentUpon>
     </Compile>
     <Compile Include="Student.cs" />
-    <EmbeddedResource Include="frmOverview.resx">
-      <DependentUpon>frmOverview.cs</DependentUpon>
+    <EmbeddedResource Include="frmAverage.resx">
+      <DependentUpon>frmAverage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmGrade.resx">
       <DependentUpon>frmGrade.cs</DependentUpon>

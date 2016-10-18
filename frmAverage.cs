@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace CPNV
 {
-    public partial class frmOverview : Form
+    public partial class frmAverage : Form
     {
         #region contructors
-        public frmOverview()
+        public frmAverage()
         {
             InitializeComponent();
         }
@@ -71,7 +71,11 @@ namespace CPNV
         private void openFrmStudentInModale()
         {
             frmStudent frmStudent = new frmStudent();
-            frmStudent.ShowDialog(this);
+            if (frmStudent.ShowDialog(this) == DialogResult.OK)
+            {
+
+
+            }
         }
 
         private void removeStudent()

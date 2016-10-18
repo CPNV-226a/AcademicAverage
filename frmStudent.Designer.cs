@@ -148,7 +148,7 @@
             this.btnRemoveGrade.TabIndex = 3;
             this.btnRemoveGrade.Text = "Remove";
             this.btnRemoveGrade.UseVisualStyleBackColor = true;
-            this.btnRemoveGrade.Click += new System.EventHandler(this.button3_Click);
+            this.btnRemoveGrade.Click += new System.EventHandler(this.cmdConfirm_Click);
             // 
             // btnUpdateGrade
             // 
@@ -190,6 +190,7 @@
             this.btnConfirm.TabIndex = 3;
             this.btnConfirm.Text = "Confirm";
             this.btnConfirm.UseVisualStyleBackColor = true;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // btnCancel
             // 
@@ -199,7 +200,7 @@
             this.btnCancel.TabIndex = 4;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.button5_Click);
+            this.btnCancel.Click += new System.EventHandler(this.cmdCancel_Click);
             // 
             // grbConfirmCancel
             // 
