@@ -38,12 +38,12 @@
             this.txtAverage = new System.Windows.Forms.TextBox();
             this.lblAverage = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnRemoveGrade = new System.Windows.Forms.Button();
-            this.btnUpdateGrade = new System.Windows.Forms.Button();
-            this.btnAddGrade = new System.Windows.Forms.Button();
+            this.cmdRemoveGrade = new System.Windows.Forms.Button();
+            this.cmdUpdateGrade = new System.Windows.Forms.Button();
+            this.cmdAddGrade = new System.Windows.Forms.Button();
             this.lsbGrades = new System.Windows.Forms.ListBox();
-            this.btnConfirm = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
+            this.cmdConfirm = new System.Windows.Forms.Button();
+            this.cmdCancel = new System.Windows.Forms.Button();
             this.grbConfirmCancel = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pcbStudentFace)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -128,9 +128,9 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.txtAverage);
-            this.groupBox2.Controls.Add(this.btnRemoveGrade);
-            this.groupBox2.Controls.Add(this.btnUpdateGrade);
-            this.groupBox2.Controls.Add(this.btnAddGrade);
+            this.groupBox2.Controls.Add(this.cmdRemoveGrade);
+            this.groupBox2.Controls.Add(this.cmdUpdateGrade);
+            this.groupBox2.Controls.Add(this.cmdAddGrade);
             this.groupBox2.Controls.Add(this.lblAverage);
             this.groupBox2.Controls.Add(this.lsbGrades);
             this.groupBox2.Location = new System.Drawing.Point(12, 170);
@@ -140,34 +140,34 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Grades";
             // 
-            // btnRemoveGrade
+            // cmdRemoveGrade
             // 
-            this.btnRemoveGrade.Location = new System.Drawing.Point(18, 78);
-            this.btnRemoveGrade.Name = "btnRemoveGrade";
-            this.btnRemoveGrade.Size = new System.Drawing.Size(75, 23);
-            this.btnRemoveGrade.TabIndex = 3;
-            this.btnRemoveGrade.Text = "Remove";
-            this.btnRemoveGrade.UseVisualStyleBackColor = true;
-            this.btnRemoveGrade.Click += new System.EventHandler(this.cmdConfirm_Click);
+            this.cmdRemoveGrade.Location = new System.Drawing.Point(18, 78);
+            this.cmdRemoveGrade.Name = "cmdRemoveGrade";
+            this.cmdRemoveGrade.Size = new System.Drawing.Size(75, 23);
+            this.cmdRemoveGrade.TabIndex = 3;
+            this.cmdRemoveGrade.Text = "Remove";
+            this.cmdRemoveGrade.UseVisualStyleBackColor = true;
+            this.cmdRemoveGrade.Click += new System.EventHandler(this.cmdConfirm_Click);
             // 
-            // btnUpdateGrade
+            // cmdUpdateGrade
             // 
-            this.btnUpdateGrade.Location = new System.Drawing.Point(18, 49);
-            this.btnUpdateGrade.Name = "btnUpdateGrade";
-            this.btnUpdateGrade.Size = new System.Drawing.Size(75, 23);
-            this.btnUpdateGrade.TabIndex = 2;
-            this.btnUpdateGrade.Text = "Update";
-            this.btnUpdateGrade.UseVisualStyleBackColor = true;
+            this.cmdUpdateGrade.Location = new System.Drawing.Point(18, 49);
+            this.cmdUpdateGrade.Name = "cmdUpdateGrade";
+            this.cmdUpdateGrade.Size = new System.Drawing.Size(75, 23);
+            this.cmdUpdateGrade.TabIndex = 2;
+            this.cmdUpdateGrade.Text = "Update";
+            this.cmdUpdateGrade.UseVisualStyleBackColor = true;
             // 
-            // btnAddGrade
+            // cmdAddGrade
             // 
-            this.btnAddGrade.Location = new System.Drawing.Point(18, 20);
-            this.btnAddGrade.Name = "btnAddGrade";
-            this.btnAddGrade.Size = new System.Drawing.Size(75, 23);
-            this.btnAddGrade.TabIndex = 1;
-            this.btnAddGrade.Text = "Add";
-            this.btnAddGrade.UseVisualStyleBackColor = true;
-            this.btnAddGrade.Click += new System.EventHandler(this.cmdAddGrade_Click);
+            this.cmdAddGrade.Location = new System.Drawing.Point(18, 20);
+            this.cmdAddGrade.Name = "cmdAddGrade";
+            this.cmdAddGrade.Size = new System.Drawing.Size(75, 23);
+            this.cmdAddGrade.TabIndex = 1;
+            this.cmdAddGrade.Text = "Add";
+            this.cmdAddGrade.UseVisualStyleBackColor = true;
+            this.cmdAddGrade.Click += new System.EventHandler(this.cmdAddGrade_Click);
             // 
             // lsbGrades
             // 
@@ -177,30 +177,30 @@
             this.lsbGrades.Size = new System.Drawing.Size(52, 82);
             this.lsbGrades.TabIndex = 0;
             // 
-            // btnConfirm
+            // cmdConfirm
             // 
-            this.btnConfirm.Location = new System.Drawing.Point(47, 19);
-            this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(75, 23);
-            this.btnConfirm.TabIndex = 3;
-            this.btnConfirm.Text = "Confirm";
-            this.btnConfirm.UseVisualStyleBackColor = true;
-            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
+            this.cmdConfirm.Location = new System.Drawing.Point(47, 19);
+            this.cmdConfirm.Name = "cmdConfirm";
+            this.cmdConfirm.Size = new System.Drawing.Size(75, 23);
+            this.cmdConfirm.TabIndex = 3;
+            this.cmdConfirm.Text = "Confirm";
+            this.cmdConfirm.UseVisualStyleBackColor = true;
+            this.cmdConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
-            // btnCancel
+            // cmdCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(155, 19);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel.TabIndex = 4;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.cmdCancel_Click);
+            this.cmdCancel.Location = new System.Drawing.Point(155, 19);
+            this.cmdCancel.Name = "cmdCancel";
+            this.cmdCancel.Size = new System.Drawing.Size(75, 23);
+            this.cmdCancel.TabIndex = 4;
+            this.cmdCancel.Text = "Cancel";
+            this.cmdCancel.UseVisualStyleBackColor = true;
+            this.cmdCancel.Click += new System.EventHandler(this.cmdCancel_Click);
             // 
             // grbConfirmCancel
             // 
-            this.grbConfirmCancel.Controls.Add(this.btnConfirm);
-            this.grbConfirmCancel.Controls.Add(this.btnCancel);
+            this.grbConfirmCancel.Controls.Add(this.cmdConfirm);
+            this.grbConfirmCancel.Controls.Add(this.cmdCancel);
             this.grbConfirmCancel.Location = new System.Drawing.Point(12, 291);
             this.grbConfirmCancel.Name = "grbConfirmCancel";
             this.grbConfirmCancel.Size = new System.Drawing.Size(285, 48);
@@ -240,15 +240,15 @@
         private System.Windows.Forms.Label lblFirstname;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btnRemoveGrade;
-        private System.Windows.Forms.Button btnUpdateGrade;
-        private System.Windows.Forms.Button btnAddGrade;
+        private System.Windows.Forms.Button cmdRemoveGrade;
+        private System.Windows.Forms.Button cmdUpdateGrade;
+        private System.Windows.Forms.Button cmdAddGrade;
         private System.Windows.Forms.ListBox lsbGrades;
         private System.Windows.Forms.TextBox txtAverage;
         private System.Windows.Forms.TextBox txtFirstname;
         private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.Button btnConfirm;
-        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button cmdConfirm;
+        private System.Windows.Forms.Button cmdCancel;
         private System.Windows.Forms.GroupBox grbConfirmCancel;
     }
 }

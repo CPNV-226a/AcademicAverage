@@ -59,23 +59,6 @@
             // lsbStudents
             // 
             this.lsbStudents.FormattingEnabled = true;
-            this.lsbStudents.Items.AddRange(new object[] {
-            "Eleve 1 - 4.5",
-            "Eleve 2 - 3.5",
-            "Eleve 3 - 2.5",
-            "Eleve 4 - 5.5",
-            "Eleve 5 - 4.5",
-            "Eleve 6 - 3.5",
-            "Eleve 7 - 2.5",
-            "Eleve 8 - 5.5",
-            "Eleve 9 - 4.5",
-            "Eleve 10 - 3.5",
-            "Eleve 11 - 2.5",
-            "Eleve 12 - 5.5",
-            "Eleve 13 - 4.5",
-            "Eleve 14 - 3.5",
-            "Eleve 15 - 2.5",
-            "Eleve 16 - 5.5"});
             this.lsbStudents.Location = new System.Drawing.Point(8, 26);
             this.lsbStudents.Name = "lsbStudents";
             this.lsbStudents.Size = new System.Drawing.Size(103, 225);
@@ -182,7 +165,7 @@
             this.mnuHelp.Size = new System.Drawing.Size(44, 20);
             this.mnuHelp.Text = "Help";
             // 
-            // frmAverage
+            // FrmAverage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -195,7 +178,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "frmAverage";
+            this.Name = "FrmAverage";
             this.Text = "Academic Average";
             this.Load += new System.EventHandler(this.frmOverview_Load);
             this.grbStudents.ResumeLayout(false);

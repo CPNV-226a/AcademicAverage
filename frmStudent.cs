@@ -80,5 +80,32 @@ namespace CPNV
         }
 
         #endregion common private methods
+
+        #region accessors and mutators
+        public bool cmdAddGradeStatus
+        {
+            get { return this.cmdAddGrade.Enabled; }
+        }
+
+        public bool cmdUpdateGradeStatus
+        {
+            get { return this.cmdUpdateGrade.Enabled; }
+        }
+
+        public bool cmdRemoveGradeStatus
+        {
+            get { return this.cmdRemoveGrade.Enabled; }
+        }
+
+        public bool cmdConfirmStatus
+        {
+            get { return this.cmdConfirm.Enabled; }
+        }
+
+        public bool cmdCancelStatus
+        {
+            get { return this.cmdCancel.Enabled; }
+        }
+        #endregion accessors and mutators
     }
 }
