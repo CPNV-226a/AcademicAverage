@@ -1,6 +1,6 @@
 ﻿namespace CPNV
 {
-    partial class frmGradesInput
+    partial class FrmGrade
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGradesInput));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGrade));
             this.nduGradeNumber = new System.Windows.Forms.NumericUpDown();
             this.numGradeDecimal = new System.Windows.Forms.NumericUpDown();
             this.grbManageGrade = new System.Windows.Forms.GroupBox();
@@ -71,6 +71,7 @@
             this.numGradeDecimal.Name = "numGradeDecimal";
             this.numGradeDecimal.Size = new System.Drawing.Size(53, 20);
             this.numGradeDecimal.TabIndex = 3;
+            this.numGradeDecimal.ValueChanged += new System.EventHandler(this.numGradeDecimal_ValueChanged);
             // 
             // grbManageGrade
             // 
@@ -120,6 +121,7 @@
             this.btnConfirm.TabIndex = 0;
             this.btnConfirm.Text = "Confirm";
             this.btnConfirm.UseVisualStyleBackColor = true;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // frmGradesInput
             // 

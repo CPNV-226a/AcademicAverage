@@ -25,63 +25,16 @@ namespace CPNV
         public FrmStudent(Student student)
         {
             InitializeComponent();
-            _student = student;
+            _student = student;       
         }
         #endregion constructors
 
-        #region IHM actions
-        private void frmStudent_Load(object sender, EventArgs e)
-        {
-            updateIHM();
-        }
-
-        private void pcbStudentFace_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnConfirm_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cmdConfirm_Click(object sender, EventArgs e)
-        {
-            DialogResult dialogResultDelete = MessageBox.Show("Confirmez-vous la suppression ?", "Suppression d'une note", MessageBoxButtons.OKCancel);
-        }
-
-        private void cmdCancel_Click(object sender, EventArgs e)
-        {
-            DialogResult dialogResultDelete = MessageBox.Show("Confirmez-vous l'annulation ?", "Suppression de la saisie", MessageBoxButtons.OKCancel);
-        }
-
-        private void cmdAddGrade_Click(object sender, EventArgs e)
-        {
-            frmGradesInput frmManageMark = new frmGradesInput();
-            
-            frmManageMark.ShowDialog(this);
-        }
-        #endregion IHM actions
-
-        #region common private methods
-        //private openFrmGrade()
-        //{
-
-        //}
-
-        private void updateIHM()
-        {
-            Student stud = this._student;
-            if (stud != null)
-            {
-                txtFirstname.Text = stud.firstname;
-                txtName.Text = stud.name;
-            }
-        }
-
-        #endregion common private methods
-
         #region accessors and mutators
+        public Student student
+        {
+            get { return this._student; }
+        }
+
         public bool cmdAddGradeStatus
         {
             get { return this.cmdAddGrade.Enabled; }
@@ -107,5 +60,56 @@ namespace CPNV
             get { return this.cmdCancel.Enabled; }
         }
         #endregion accessors and mutators
+
+        #region GUI events
+        private void cmdRemoveGrade_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResultDelete = MessageBox.Show("Confirmez-vous la suppression ?", "Suppression d'une note", MessageBoxButtons.OKCancel);
+        }
+
+        private void cmdConfirm_Click(object sender, EventArgs e)
+        {
+            Student stud = new Student(this.txtName.Text, this.txtFirstname.Text);
+            this._student = stud;
+        }
+
+        private void frmStudent_Load(object sender, EventArgs e)
+        {
+            updateGUI();
+        }
+
+        private void pcbStudentFace_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmdRemove_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void cmdCancel_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResultDelete = MessageBox.Show("Confirmez-vous l'annulation ?", "Suppression de la saisie", MessageBoxButtons.OKCancel);
+        }
+
+        private void cmdAddGrade_Click(object sender, EventArgs e)
+        {
+            
+        }
+        #endregion GUI actions
+
+        #region common private methods
+        private void updateGUI()
+        {
+            Student stud = this._student;
+            if (stud != null)
+            {
+                txtFirstname.Text = stud.firstname;
+                txtName.Text = stud.name;
+            }
+        }
+
+        #endregion common private methods
     }
 }

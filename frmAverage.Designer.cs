@@ -31,9 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAverage));
             this.grbStudents = new System.Windows.Forms.GroupBox();
             this.lsbStudents = new System.Windows.Forms.ListBox();
-            this.cmdAddStudent = new System.Windows.Forms.Button();
-            this.cmdUpdateStudent = new System.Windows.Forms.Button();
-            this.cmdRemoveStudent = new System.Windows.Forms.Button();
             this.grbActions = new System.Windows.Forms.GroupBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.mnuStudent = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,6 +38,9 @@
             this.mnuItemUpdate = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuItemRemove = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuHelp = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmdRemoveStudent = new System.Windows.Forms.Button();
+            this.cmdUpdateStudent = new System.Windows.Forms.Button();
+            this.cmdAddStudent = new System.Windows.Forms.Button();
             this.grbStudents.SuspendLayout();
             this.grbActions.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -64,44 +64,6 @@
             this.lsbStudents.Size = new System.Drawing.Size(103, 225);
             this.lsbStudents.TabIndex = 0;
             this.lsbStudents.SelectedIndexChanged += new System.EventHandler(this.lsbStudents_SelectedIndexChanged);
-            // 
-            // cmdAddStudent
-            // 
-            this.cmdAddStudent.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmdAddStudent.BackgroundImage")));
-            this.cmdAddStudent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.cmdAddStudent.Location = new System.Drawing.Point(13, 30);
-            this.cmdAddStudent.Name = "cmdAddStudent";
-            this.cmdAddStudent.Size = new System.Drawing.Size(60, 70);
-            this.cmdAddStudent.TabIndex = 0;
-            this.cmdAddStudent.UseVisualStyleBackColor = true;
-            this.cmdAddStudent.Click += new System.EventHandler(this.cmdAddStudent_Click);
-            // 
-            // cmdUpdateStudent
-            // 
-            this.cmdUpdateStudent.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.cmdUpdateStudent.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmdUpdateStudent.BackgroundImage")));
-            this.cmdUpdateStudent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cmdUpdateStudent.Enabled = false;
-            this.cmdUpdateStudent.Image = ((System.Drawing.Image)(resources.GetObject("cmdUpdateStudent.Image")));
-            this.cmdUpdateStudent.Location = new System.Drawing.Point(15, 106);
-            this.cmdUpdateStudent.Name = "cmdUpdateStudent";
-            this.cmdUpdateStudent.Size = new System.Drawing.Size(60, 68);
-            this.cmdUpdateStudent.TabIndex = 1;
-            this.cmdUpdateStudent.UseVisualStyleBackColor = false;
-            this.cmdUpdateStudent.Click += new System.EventHandler(this.cmdUpdateStudent_Click);
-            // 
-            // cmdRemoveStudent
-            // 
-            this.cmdRemoveStudent.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmdRemoveStudent.BackgroundImage")));
-            this.cmdRemoveStudent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cmdRemoveStudent.Enabled = false;
-            this.cmdRemoveStudent.Image = ((System.Drawing.Image)(resources.GetObject("cmdRemoveStudent.Image")));
-            this.cmdRemoveStudent.Location = new System.Drawing.Point(16, 180);
-            this.cmdRemoveStudent.Name = "cmdRemoveStudent";
-            this.cmdRemoveStudent.Size = new System.Drawing.Size(60, 67);
-            this.cmdRemoveStudent.TabIndex = 2;
-            this.cmdRemoveStudent.UseVisualStyleBackColor = true;
-            this.cmdRemoveStudent.Click += new System.EventHandler(this.cmdDelete_click);
             // 
             // grbActions
             // 
@@ -164,6 +126,44 @@
             this.mnuHelp.Name = "mnuHelp";
             this.mnuHelp.Size = new System.Drawing.Size(44, 20);
             this.mnuHelp.Text = "Help";
+            // 
+            // cmdRemoveStudent
+            // 
+            this.cmdRemoveStudent.BackgroundImage = global::CPNV.Properties.Resources.removeStudent;
+            this.cmdRemoveStudent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cmdRemoveStudent.Enabled = false;
+            this.cmdRemoveStudent.Image = global::CPNV.Properties.Resources.Croix_rouge_disable;
+            this.cmdRemoveStudent.Location = new System.Drawing.Point(16, 180);
+            this.cmdRemoveStudent.Name = "cmdRemoveStudent";
+            this.cmdRemoveStudent.Size = new System.Drawing.Size(60, 67);
+            this.cmdRemoveStudent.TabIndex = 2;
+            this.cmdRemoveStudent.UseVisualStyleBackColor = true;
+            this.cmdRemoveStudent.Click += new System.EventHandler(this.cmdDelete_click);
+            // 
+            // cmdUpdateStudent
+            // 
+            this.cmdUpdateStudent.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.cmdUpdateStudent.BackgroundImage = global::CPNV.Properties.Resources.updateStudent;
+            this.cmdUpdateStudent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cmdUpdateStudent.Enabled = false;
+            this.cmdUpdateStudent.Image = global::CPNV.Properties.Resources.Croix_rouge_disable;
+            this.cmdUpdateStudent.Location = new System.Drawing.Point(15, 106);
+            this.cmdUpdateStudent.Name = "cmdUpdateStudent";
+            this.cmdUpdateStudent.Size = new System.Drawing.Size(60, 68);
+            this.cmdUpdateStudent.TabIndex = 1;
+            this.cmdUpdateStudent.UseVisualStyleBackColor = false;
+            this.cmdUpdateStudent.Click += new System.EventHandler(this.cmdUpdateStudent_Click);
+            // 
+            // cmdAddStudent
+            // 
+            this.cmdAddStudent.BackgroundImage = global::CPNV.Properties.Resources.addStudent;
+            this.cmdAddStudent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.cmdAddStudent.Location = new System.Drawing.Point(13, 30);
+            this.cmdAddStudent.Name = "cmdAddStudent";
+            this.cmdAddStudent.Size = new System.Drawing.Size(60, 70);
+            this.cmdAddStudent.TabIndex = 0;
+            this.cmdAddStudent.UseVisualStyleBackColor = true;
+            this.cmdAddStudent.Click += new System.EventHandler(this.cmdAddStudent_Click);
             // 
             // FrmAverage
             // 

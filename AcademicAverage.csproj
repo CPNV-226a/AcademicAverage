@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\AcademicAverage.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -99,6 +100,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Croix-rouge_disable.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\addStudent.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Croix-rouge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Croix-rouge_small.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\removeStudent.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\removeStudentInactiv.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\updateStudent.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -148,7 +148,7 @@
             this.cmdRemoveGrade.TabIndex = 3;
             this.cmdRemoveGrade.Text = "Remove";
             this.cmdRemoveGrade.UseVisualStyleBackColor = true;
-            this.cmdRemoveGrade.Click += new System.EventHandler(this.cmdConfirm_Click);
+            this.cmdRemoveGrade.Click += new System.EventHandler(this.cmdRemoveGrade_Click);
             // 
             // cmdUpdateGrade
             // 
@@ -179,13 +179,14 @@
             // 
             // cmdConfirm
             // 
+            this.cmdConfirm.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.cmdConfirm.Location = new System.Drawing.Point(47, 19);
             this.cmdConfirm.Name = "cmdConfirm";
             this.cmdConfirm.Size = new System.Drawing.Size(75, 23);
             this.cmdConfirm.TabIndex = 3;
             this.cmdConfirm.Text = "Confirm";
             this.cmdConfirm.UseVisualStyleBackColor = true;
-            this.cmdConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
+            this.cmdConfirm.Click += new System.EventHandler(this.cmdConfirm_Click);
             // 
             // cmdCancel
             // 
