@@ -138,7 +138,7 @@
             this.cmdRemoveStudent.Size = new System.Drawing.Size(60, 67);
             this.cmdRemoveStudent.TabIndex = 2;
             this.cmdRemoveStudent.UseVisualStyleBackColor = true;
-            this.cmdRemoveStudent.Click += new System.EventHandler(this.cmdDelete_click);
+            this.cmdRemoveStudent.Click += new System.EventHandler(this.cmdRemove_click);
             // 
             // cmdUpdateStudent
             // 

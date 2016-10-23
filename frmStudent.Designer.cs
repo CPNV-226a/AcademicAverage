@@ -53,14 +53,14 @@
             // 
             // pcbStudentFace
             // 
-            this.pcbStudentFace.Image = ((System.Drawing.Image)(resources.GetObject("pcbStudentFace.Image")));
+            this.pcbStudentFace.Image = global::CPNV.Properties.Resources.unknownStudent;
             this.pcbStudentFace.Location = new System.Drawing.Point(18, 19);
             this.pcbStudentFace.Name = "pcbStudentFace";
             this.pcbStudentFace.Size = new System.Drawing.Size(104, 107);
             this.pcbStudentFace.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbStudentFace.TabIndex = 0;
             this.pcbStudentFace.TabStop = false;
-            this.pcbStudentFace.Click += new System.EventHandler(this.pcbStudentFace_Click);
+            this.pcbStudentFace.Click += new System.EventHandler(this.pcbStudentStudentFace_Click);
             // 
             // groupBox1
             // 
@@ -158,6 +158,7 @@
             this.cmdUpdateGrade.TabIndex = 2;
             this.cmdUpdateGrade.Text = "Update";
             this.cmdUpdateGrade.UseVisualStyleBackColor = true;
+            this.cmdUpdateGrade.Click += new System.EventHandler(this.cmdUpdateGrade_Click);
             // 
             // cmdAddGrade
             // 

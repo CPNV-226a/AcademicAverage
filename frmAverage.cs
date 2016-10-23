@@ -39,8 +39,63 @@ namespace CPNV
         }
         #endregion constructors
 
-        #region private methods
-        #region GUI events listener
+        #region accessors and mutators (for unit test)
+        /// <summary>
+        /// This method is designed
+        /// for unit test. We return the status of the "add student" buttton
+        /// </summary>
+        public bool cmdAddStudentStatus
+        {
+            get { return this.cmdAddStudent.Enabled; }
+        }
+
+        /// <summary>
+        /// This method is designed
+        /// for unit test. We return the status of the "add student" menu item
+        /// </summary>
+        public bool mnuItemAddStudentStatus
+        {
+            get { return this.mnuItemAdd.Enabled; }
+        }
+
+        /// <summary>
+        /// This method is designed
+        /// for unit test. We return the status of the "update student" buttton
+        /// </summary>
+        public bool cmdUpdateStudentStatus
+        {
+            get { return this.cmdUpdateStudent.Enabled; }
+        }
+
+        /// <summary>
+        /// This method is designed
+        /// for unit test. We return the status of the "update student" menu item
+        /// </summary>
+        public bool mnuItemUpdateStudentStatus
+        {
+            get { return this.mnuItemUpdate.Enabled; }
+        }
+
+        /// <summary>
+        /// This method is designed
+        /// for unit test. We return the status of the "remove student" buttton
+        /// </summary>
+        public bool cmdRemoveStudentStatus
+        {
+            get { return this.cmdRemoveStudent.Enabled; }
+        }
+
+        /// <summary>
+        /// This method is designed
+        /// for unit test. We return the status of the "remove student" menu item
+        /// </summary>
+        public bool mnuItemRemoveStudentStatus
+        {
+            get { return this.mnuItemRemove.Enabled; }
+        }
+        #endregion accessors and mutators (for unit test)
+
+        #region GUI events
         /// <summary>
         /// This method is designed 
         /// to execute some actions after the event "load"
@@ -52,7 +107,7 @@ namespace CPNV
 
         /// <summary>
         /// This method is designed 
-        /// to listen a "click" event on the button "add student"
+        /// to execute some actions after the event "click" on the button "add student"
         /// </summary>
         private void cmdAddStudent_Click(object sender, EventArgs e)
         {
@@ -62,7 +117,7 @@ namespace CPNV
 
         /// <summary>
         /// This method is designed 
-        /// to listen a "click" event on the menu "add student"
+        /// to execute some actions after the event "click" on the menu item "add student"
         /// </summary>
         private void mnuItemAdd_Click(object sender, EventArgs e)
         {
@@ -72,7 +127,7 @@ namespace CPNV
 
         /// <summary>
         /// This method is designed 
-        /// to listen a "click" event on the button "update student"
+        /// to execute some actions after the event "click" on the button "update student"
         /// </summary>
         private void cmdUpdateStudent_Click(object sender, EventArgs e)
         {
@@ -82,7 +137,7 @@ namespace CPNV
 
         /// <summary>
         /// This method is designed 
-        /// to listen a "click" event on the menu "update student"
+        /// to execute some actions after the event "click" on the menu item "add student"
         /// </summary>
         private void mnuItemUpdate_Click(object sender, EventArgs e)
         {
@@ -92,9 +147,9 @@ namespace CPNV
 
         /// <summary>
         /// This method is designed 
-        /// to listen a "click" event on the button "remove student"
+        /// to execute some actions after the event "click" on the button "remove student"
         /// </summary>
-        private void cmdDelete_click(object sender, EventArgs e)
+        private void cmdRemove_click(object sender, EventArgs e)
         {
             //we call the method studentRemoveProcess resposible to find the student to remove
             studentRemoveProcess();
@@ -102,7 +157,7 @@ namespace CPNV
 
         /// <summary>
         /// This method is designed 
-        /// to listen a "click" event on the menu "remove student"
+        /// to execute some actions after the event "click" on the menu item "remove student"
         /// </summary>
         private void mnuItemRemove_Click(object sender, EventArgs e)
         {
@@ -346,62 +401,5 @@ namespace CPNV
         }
 
         #endregion Common actions after events
-        #endregion private methods
-
-        #region accessors and mutators for unit test
-        /// <summary>
-        /// This method is designed
-        /// for unit test. We return the status of the "add student" buttton
-        /// </summary>
-        public bool cmdAddStudentStatus
-        {
-            get { return this.cmdAddStudent.Enabled; }
-        }
-
-        /// <summary>
-        /// This method is designed
-        /// for unit test. We return the status of the "add student" menu item
-        /// </summary>
-        public bool mnuItemAddStudentStatus
-        {
-            get { return this.mnuItemAdd.Enabled; }
-        }
-
-        /// <summary>
-        /// This method is designed
-        /// for unit test. We return the status of the "update student" buttton
-        /// </summary>
-        public bool cmdUpdateStudentStatus
-        {
-            get { return this.cmdUpdateStudent.Enabled; }
-        }
-
-        /// <summary>
-        /// This method is designed
-        /// for unit test. We return the status of the "update student" menu item
-        /// </summary>
-        public bool mnuItemUpdateStudentStatus
-        {
-            get { return this.mnuItemUpdate.Enabled; }
-        }
-
-        /// <summary>
-        /// This method is designed
-        /// for unit test. We return the status of the "remove student" buttton
-        /// </summary>
-        public bool cmdRemoveStudentStatus
-        {
-            get { return this.cmdRemoveStudent.Enabled; }
-        }
-
-        /// <summary>
-        /// This method is designed
-        /// for unit test. We return the status of the "remove student" menu item
-        /// </summary>
-        public bool mnuItemRemoveStudentStatus
-        {
-            get { return this.mnuItemRemove.Enabled; }
-        }
-        #endregion accessors and mutators for unit test
     }
 }
